@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/backgrnd_theme"
+        android:id="@+id/lin">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/goback"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="@drawable/backgrnd_theme"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:text="HELP"
+            android:layout_marginBottom="5dp"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:text="Getting Started\n
+        Twinfo is twitter information fetching application. It uses PeerReach API for request.\n
+  HOW IT WORKS:\nJust Enter the Twitter handle(without @) on the main page and click Twinfo button.\n\n
+        You will Get the required info.\n\n
+  WHAT TO DO IF TWINFO DOESNT WORK:\n
+1.  Restart the App.\n
+2.  Check Your Internet Connection. Twinfo requires active internet connection to fetch data.\n
+3.  Check if you have typed the twitter handle correctly without any spelling mistakes\n
+4.  Allow all the required permissions for the app (Asked just after installation).\n
+5.  Try after sometime as twinfo uses an API with limited requests.\n\n
+ If none of the above solution works.\n
+ Leave a feedback with detailed information\n
+ We will get back to you as soon as possible.\n
+ THANKS FOR USING TWINFO\n\n"
+            android:id="@+id/gs"
+            />
+
+    </ScrollView>
+
+
+</RelativeLayout>
